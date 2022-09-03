@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            background: -webkit-linear-gradient(to right, #F29492, #114357);
+            background: linear-gradient(to right, #F29492, #114357);
+
+        }
+
+        .outer-div {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inner-1 {
+            width: 250px;
+            height: 300px;
+           
+        }
+
+        .inner-2 {
+            width: 250px;
+            height: 300px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            padding: 10px;
+            gap: 0.6rem;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .inner-2>p {
+             font-family: sans-serif;
+             position: relative;
+        }
+
+        #price {
+            color: green;
+            font-weight: bolder;
+        }
+
+        button {
+            width: 220px;
+            height: 40px;
+            border: 0ch;
+            border-radius: 10px;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+           
+        }
+        p i{
+            position: absolute;
+            left: 3rem;
+            bottom: 1.1rem;
+            font-size: 1rem;
+            color: white;
+        }
+        img{
+            border-radius: 10px 0 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer-div">
+        <div class="inner-1">
+            <img src="https://expensivecheapest.com/wp-content/uploads/2019/04/most-expensive-perfume-on-amazon.jpg"
+                alt="Perfume" width="250px" height="300px">
+        </div>
+
+        <div class="inner-2">
+            <p>PERFUME</p>
+            <h2>Gabrielle,<br>Essence Eau<br>De Parfume</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque officia ipsum et corporis voluptates
+                mollitia distincti quo.</p>
+            <h2 id="price">$149.99</h2>
+            <button>Add to Cart</button>
+            <p><i class='bx bx-add-to-queue'></i></p>
+        </div>
+    </div>
+</body>
+
+</html>
